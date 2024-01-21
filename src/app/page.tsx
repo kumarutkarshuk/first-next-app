@@ -3,6 +3,15 @@
 //component name can be anything
 //export default is mandatory
 
+import Link from "next/link";
+
 export default function Home(){
-    return <h1>Welcome to home page</h1>
+    return (
+        <>
+            <p>hello</p>
+            <Link href='/about'>about</Link> <br />
+            <Link href='/docs'>docs</Link> <br />
+            <Link href='/products' replace>products</Link>
+        </>
+    )
 }
