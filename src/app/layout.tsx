@@ -1,11 +1,14 @@
 // "metadata" and "generateMetadata" are conventions
 // page metadata is prioritized over layout metadata 
-// layout is like components inside a component -> nesting possible
+// layout is like a parent component in which page.tsx & other child components will come -> nesting possible
 //check about, folder/route metadata
 //template key in title object of metadata is only for child components
+//root layout.tsx is must and can't be replaced with template.jsx
+
 
 import { Metadata } from "next"
 import './globals.css'
+
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +24,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
       

@@ -1,3 +1,9 @@
+import Link from "next/link"
 export default function Nest(){
-    return <h1>nested about page</h1>
+    return (
+        <div>
+            <h1>about page</h1>
+            <Link href='/about'>about</Link>
+        </div>
+    )
 }

@@ -8,10 +8,12 @@ import Link from "next/link";
 export default function Home(){
     return (
         <>
-            <p>hello</p>
-            <Link href='/about'>about</Link> <br />
-            <Link href='/docs'>docs</Link> <br />
-            <Link href='/products' replace>products</Link>
+            <h1>home page</h1>
+            <div className="flex gap-2">
+                <Link href='/about'>about</Link>
+                <Link href='/docs'>docs</Link>
+                <Link href='/products' replace>products</Link>
+            </div>
         </>
     )
 }
