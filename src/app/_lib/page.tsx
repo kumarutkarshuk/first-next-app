@@ -1,3 +1,5 @@
+//can't use ' directly
+
 export default function Lib(){
-    return <h1> you can not view this page </h1>
+    return <h1> you can&apos;t view this page </h1>
 }
