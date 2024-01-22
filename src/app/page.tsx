@@ -2,6 +2,7 @@
 //default -> server components
 //component name can be anything
 //export default is mandatory
+// unmatched, intercepting, intercepting and parallel (both together) routes
 
 import Link from "next/link";
 
