@@ -4,7 +4,8 @@
 //metadata can't be used with client components
 //try switching between template.tsx and layout.tsx and find out the difference after filling in input field
 //both template.jsx and layout.tsx can also be used together
-//hookes can't be use inside callback
+//hookes can't be directly inside callback
+//checkout what pathname gives
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -13,7 +14,7 @@ const data = [
   {name:'register', href:'/register'},
   {name:'forgot password', href:'/forgot-password'}
 ]
-  export default function AuthLayout({
+  export default function AuthTemplate({
     children,
   }: {
     children: React.ReactNode

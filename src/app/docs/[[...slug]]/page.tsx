@@ -1,3 +1,5 @@
+// [[]] -> double brackets to include docs path also
+
 export default function Docs({
     params
 } : {params: {slug: string[]}}){

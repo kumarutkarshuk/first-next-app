@@ -1,13 +1,15 @@
-// "metadata" and "generateMetadata" are conventions
+// "metadata" and "generateMetadata" have name conventions
 // page metadata is prioritized over layout metadata 
 // layout is like a parent component in which page.tsx & other child components will come -> nesting possible
-//check about, folder/route metadata
+//check about folder/route metadata
 //template key in title object of metadata is only for child components
 //root layout.tsx is must and can't be replaced with template.jsx
 
 
 import { Metadata } from "next"
 import './globals.css'
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import '@mantine/core/styles.css';
 
 
 export const metadata: Metadata = {
@@ -27,11 +29,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      
+      <head><ColorSchemeScript /></head>
       <body>
-        <header>Header</header>
-        {children}
-        <footer>Footer</footer>
+        {/* <header>Header</header> */}
+        <MantineProvider>{children}</MantineProvider>
+        {/* <footer>Footer</footer> */}
       </body>
       
     </html>

@@ -1,7 +1,7 @@
 'use client'
 
-//if a page always gives and error like below, building won't be possible
-//floor method gives nearest integer to the left on the number line
+//if a page always gives and error like commented code below, building won't be possible
+//floor method gives nearest integer to the left, on the number line
 //random method gives number between 0(inc) and 1(exc)
 //not getting error in production build -> use client
 

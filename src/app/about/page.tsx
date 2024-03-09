@@ -6,9 +6,9 @@ import Link from "next/link"
 // export const metadata: Metadata = {
 //     title: "About"
 // }
-export const metadata: Metadata = {
-    title: {absolute:"absolute title"}
-}
+// export const metadata: Metadata = {
+//     title: {absolute:"absolute title"}
+// }
 
 export default function About(){
     return(
